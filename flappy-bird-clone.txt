@@ -1,0 +1,75 @@
+Flappy Bird Clone
+
+Telas do Jogo:
+
+-Menu Principal: é aonde o jogador seleciona as opções e é direcionado ou para tela de jogo ou para a
+tela de extras. É composta do título, dos botões e de um efeito especial de folhas que pode ser 
+desativado em favor de uma melhor performance;
+
+-Menu do Jogo: é aonde o jogo ocorre, no qual o jogador controla uma ave que tá constantemente caindo
+e apertando espaço ela ganha um pouco mais de altitude. A ideia é evitar tocar nas bordas da tela, nas
+árvores e nos pássaros pelo maior tempo possível, aumentando cada vez mais a velocidade conforme o score.
+Além disso, temos peixes que servem para comprar skins na tela de extras. Caso encoste em algum 
+obstáculo, o jogador volta a tela inicial;
+
+-Menu de Extras: aqui o jogador pode comprar skins novas com os peixes que coletar durante a gameplay.
+Aqui é composto das skins para comprar mediante ao valor informado e um botão de voltar, que volta
+para a tela principal.
+
+Mecânicas presentes:
+-Velocidade aumentada a cada cem pontos;
+-Coletável usado como moeda;
+-Loja para comprar objetos.
+
+Pontos positivos:
+-O jogo tem gráficos bonitos, sendo bem detalhada a pixel art e o contorno ajuda a destacar bem os
+elementos;
+-Ele tem um fator replay no sistema de coletável e loja, já que você se desafia a juntar mais para
+adquirir cada skin na loja;
+-Música confortável e tranquila de ouvir, ideal para um jogo que serve para sair do tédio;
+
+Pontos negativos:
+-A colisão é um tanto problemática, tornando uma dificuldade elevada ainda mais elevada;
+-O fato dele sempre voltar direto a tela principal torna bem burocrático o reset, que poderia ser 
+apenas um botão de "continue" após a colisão;
+-A dificuldade poderia ser mais progressiva, com as aves aparecendo um pouco depois para dar tempo do
+jogador se acostumar.
+
+-----------------------------------------------------------------------------------------------------
+TO DO LIST
+
+-Criar a Tela do Jogo (Loop Principal):
+	-Criar o objeto do jogador;
+	-Atribuir a ele uma velocidade vertical constante para baixo;
+	-Colocar um input que fará o objeto subir verticalmente;
+	-Criar o objeto dos obstáculos (ave e árvores);
+	-Atribuir uma colisão a eles com o jogador;
+	-Fazer com que eles se movam da direita para a esquerda;
+	-Fazer com que apareçam em alturas variáveis;
+	-Fazer com que tenham um tempo aleatório para aparecerem na tela;
+	-Criar o objeto do coletável;
+	-Criar uma variável global que armazene quantos coletáveis você pegou;
+	-Criar o background em movimento.
+-Criar a Tela Inicial:
+	-Trazer o background em movimento para esta tela.
+	-Criar o botão de iniciar;
+	-Atribuir ele para direcionar para a tela do jogo;
+	-Criar o botão de extras;
+	-Atribuir ele para direcionar para a tela da loja;
+	-Fazer o jogo iniciar por esta tela;
+	-Criar o efeito das folhas caindo;
+	-(OPCIONAL) Fazer um botão para desabilitar o efeito acima;
+-Criar a Tela de Extras/Loja:
+	-Criar um botão de voltar;
+	-Fazer com que o botão volte a tela inicial;
+	-Criar as opções de skin que podem ser compradas com os coletáveis;
+	-Condicionar a compra apenas se tiver o valor especificado de coletáveis;
+	-Ao comprar uma skin, ter a opção de conseguir trocar ela, que irá trocar o sprite do jogador;
+	-Além disso, subtrair do valor de coletáveis o valor da skin.
+-Outros:
+	-Criar a transição de tela que é um fade in/fade out;
+	-(OPCIONAL) criar uma tela de Game Over que apresenta um reset mais rápido para o jogador;
+	-Fazer uma dificuldade incremental a cada cem pontos acumulados, aumentando a velocidade e o
+	desafio;
+	-Melhorar a manobrabilidade para tornar mais fácil do jogador jogar e menos frustrante a
+	experiência.
