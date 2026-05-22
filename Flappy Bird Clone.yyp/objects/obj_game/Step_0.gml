@@ -10,10 +10,6 @@ if(obj_player.colidiu) {
 		layer_hspeed(id_bg, 0);
 	}
 	
-	//Vamos também parar a ação da gravidade sob o player
-	obj_player.gravity = 0;
-	obj_player.vspeed = 0;
-	
 	//Por fim, precisamos parar as instâncias das árvores e
 	//evitar a geração de mais.
 	var obstaculos = layer_get_all_elements(layer_get_id("Obstaculos"));
@@ -21,5 +17,13 @@ if(obj_player.colidiu) {
 		var instancia = layer_instance_get_instance(obstaculos[i]);
 		instancia.hspeed = 0;
 	}
-	alarm[0] = -1;
+	//Verificação para ver se o alarm 0 está parado. Isso serve para
+	//rodar uma única vez todo o processo dentro do step a fim de
+	//criar um alarm para reset
+	if(alarm[0] != -1) {
+		alarm[0] = -1;
+	
+		//Vamos colocar um outro alarm para rodar daqui a 1 segundo
+		alarm[1] = game_get_speed(gamespeed_fps);
+	}
 }
