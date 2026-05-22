@@ -1,0 +1,17 @@
+{
+  "FolderOrderSettings":[
+    {"name":"Obstáculos","order":1,"path":"folders/Objetos/Obstáculos.yy",},
+    {"name":"Obstáculos","order":2,"path":"folders/Sprites/Obstáculos.yy",},
+  ],
+  "ResourceOrderSettings":[
+    {"name":"obj_game","order":2,"path":"objects/obj_game/obj_game.yy",},
+    {"name":"spr_bg_agua","order":3,"path":"sprites/spr_bg_agua/spr_bg_agua.yy",},
+    {"name":"spr_bg_arvores","order":2,"path":"sprites/spr_bg_arvores/spr_bg_arvores.yy",},
+    {"name":"spr_bg_lua","order":1,"path":"sprites/spr_bg_lua/spr_bg_lua.yy",},
+    {"name":"spr_bg_refl_arvores","order":4,"path":"sprites/spr_bg_refl_arvores/spr_bg_refl_arvores.yy",},
+    {"name":"spr_bg_refl2","order":5,"path":"sprites/spr_bg_refl2/spr_bg_refl2.yy",},
+    {"name":"spr_passaro2","order":1,"path":"sprites/spr_passaro2/spr_passaro2.yy",},
+    {"name":"spr_passaro3","order":2,"path":"sprites/spr_passaro3/spr_passaro3.yy",},
+    {"name":"spr_refl_lua","order":6,"path":"sprites/spr_refl_lua/spr_refl_lua.yy",},
+  ],
+}
