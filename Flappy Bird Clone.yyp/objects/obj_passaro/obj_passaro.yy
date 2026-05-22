@@ -1,11 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"obj_arvore",
-  "eventList":[],
+  "%Name":"obj_passaro",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"obj_arvore",
+  "name":"obj_passaro",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_obstaculo","path":"objects/obj_obstaculo/obj_obstaculo.yy",},"propertyId":{"name":"velocidade","path":"objects/obj_obstaculo/obj_obstaculo.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"-2",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_obstaculo","path":"objects/obj_obstaculo/obj_obstaculo.yy",},"propertyId":{"name":"velocidade","path":"objects/obj_obstaculo/obj_obstaculo.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"-4",},
   ],
   "parent":{
     "name":"Obstáculos",
@@ -33,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_arvore",
-    "path":"sprites/spr_arvore/spr_arvore.yy",
+    "name":"spr_passaro3",
+    "path":"sprites/spr_passaro3/spr_passaro3.yy",
   },
   "spriteMaskId":null,
   "visible":true,

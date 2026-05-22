@@ -1,6 +1,7 @@
 //Vamos verificar se o player colidiu com um obstáculo
 //a fim de parar o jogo
 if(obj_player.colidiu) {
+	if(alarm[0] == -1) exit;
 	//Vamos parar todos os layers de background iterando sobre cada
 	//um para isso
 	var layers = layer_get_all();
@@ -17,13 +18,12 @@ if(obj_player.colidiu) {
 		var instancia = layer_instance_get_instance(obstaculos[i]);
 		instancia.hspeed = 0;
 	}
-	//Verificação para ver se o alarm 0 está parado. Isso serve para
-	//rodar uma única vez todo o processo dentro do step a fim de
-	//criar um alarm para reset
-	if(alarm[0] != -1) {
-		alarm[0] = -1;
 	
-		//Vamos colocar um outro alarm para rodar daqui a 1 segundo
-		alarm[1] = game_get_speed(gamespeed_fps);
-	}
+	//Todos os alarmes ativos serão travados
+	alarm[0] = -1;
+	alarm[2] = -1;
+	alarm[3] = -1
+	
+	//Vamos colocar um outro alarm para rodar daqui a 1 segundo
+	alarm[1] = game_get_speed(gamespeed_fps);
 }
