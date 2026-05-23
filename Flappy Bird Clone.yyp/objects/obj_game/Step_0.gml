@@ -11,6 +11,13 @@ if(obj_player.colidiu) {
 		layer_hspeed(id_bg, 0);
 	}
 	
+	//Pare também os coletáveis
+	var coletaveis = layer_get_all_elements(layer_get_id("Coletaveis"));
+	for(var i = 0; i < array_length(coletaveis); i++){
+		var instancia = layer_instance_get_instance(coletaveis[i]);
+		instancia.hspeed = 0;
+	}
+	
 	//Por fim, precisamos parar as instâncias das árvores e
 	//evitar a geração de mais.
 	var obstaculos = layer_get_all_elements(layer_get_id("Obstaculos"));

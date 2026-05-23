@@ -5,7 +5,7 @@
   "managed":true,
   "name":"obj_arvore",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_obstaculo","path":"objects/obj_obstaculo/obj_obstaculo.yy",},"propertyId":{"name":"velocidade","path":"objects/obj_obstaculo/obj_obstaculo.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"-2",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_obstaculo","path":"objects/obj_obstaculo/obj_obstaculo.yy",},"propertyId":{"name":"velocidade","path":"objects/obj_obstaculo/obj_obstaculo.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"global.vel_arvore",},
   ],
   "parent":{
     "name":"Obstáculos",

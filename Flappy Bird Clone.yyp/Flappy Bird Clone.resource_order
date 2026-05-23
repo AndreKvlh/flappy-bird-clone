@@ -1,6 +1,8 @@
 {
   "FolderOrderSettings":[
+    {"name":"Coletáveis","order":3,"path":"folders/Objetos/Coletáveis.yy",},
     {"name":"Obstáculos","order":1,"path":"folders/Objetos/Obstáculos.yy",},
+    {"name":"Coletáveis","order":4,"path":"folders/Sprites/Coletáveis.yy",},
     {"name":"Misc","order":3,"path":"folders/Sprites/Misc.yy",},
     {"name":"Obstáculos","order":2,"path":"folders/Sprites/Obstáculos.yy",},
   ],
@@ -16,6 +18,7 @@
     {"name":"spr_bg_refl2","order":5,"path":"sprites/spr_bg_refl2/spr_bg_refl2.yy",},
     {"name":"spr_passaro2","order":1,"path":"sprites/spr_passaro2/spr_passaro2.yy",},
     {"name":"spr_passaro3","order":2,"path":"sprites/spr_passaro3/spr_passaro3.yy",},
+    {"name":"spr_peixe_icone","order":1,"path":"sprites/spr_peixe_icone/spr_peixe_icone.yy",},
     {"name":"spr_refl_lua","order":6,"path":"sprites/spr_refl_lua/spr_refl_lua.yy",},
   ],
 }

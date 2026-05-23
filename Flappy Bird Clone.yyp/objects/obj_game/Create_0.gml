@@ -10,3 +10,6 @@ alarm[2] = random_range(2,5) * 60;
 
 //Aqui criaremos um alarme para ir aumentando a pontuação a cada segundo
 alarm[3] = FRAMES_PONTOS;
+
+//Alarm que cria os coletáveis
+alarm[4] = random_range(4,6) * 60;

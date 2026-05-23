@@ -4,6 +4,12 @@ draw_set_font(fnt_pontuacao);
 //Vamos daí desenhar no canto superior esquerdo a pontuação
 draw_text(20, 20, global.score_atual);
 
+//Vamos desenhar a sprite do ícone dos peixes abaixo da nossa pontuação
+draw_sprite(spr_peixe_icone,0,20,80);
+
+//Logo ao lado vamos colocar a quantidade de peixes obtida
+draw_text(50,65, global.qtd_peixe);
+
 //Vamos pegar a metade da nossa tela
 var meio_tela = window_get_width() / 2;
 

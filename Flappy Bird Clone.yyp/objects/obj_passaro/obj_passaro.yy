@@ -7,7 +7,7 @@
   "managed":true,
   "name":"obj_passaro",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_obstaculo","path":"objects/obj_obstaculo/obj_obstaculo.yy",},"propertyId":{"name":"velocidade","path":"objects/obj_obstaculo/obj_obstaculo.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"-4",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_obstaculo","path":"objects/obj_obstaculo/obj_obstaculo.yy",},"propertyId":{"name":"velocidade","path":"objects/obj_obstaculo/obj_obstaculo.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"global.vel_passaro",},
   ],
   "parent":{
     "name":"Obstáculos",
