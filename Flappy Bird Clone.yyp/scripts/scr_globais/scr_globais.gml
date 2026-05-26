@@ -1,3 +1,5 @@
+show_debug_overlay(true);
+
 //Globais para o armazenamento de pontos
 global.score_atual = 0;
 global.hi_score = 0;
@@ -29,3 +31,6 @@ global.itens = [false, true, true];
 
 //Global que armazena a skin atual para o player
 global.skin_atual = spr_passaro1;
+
+//Global que controla se os efeitos estão ativos ou não
+global.fx_habilitado = true;

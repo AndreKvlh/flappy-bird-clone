@@ -5,6 +5,8 @@ global.score_atual++;
 if(global.score_atual == global.pontos_niveis[global.level] && global.level < 9) {
 	global.level++;
 	
+	audio_play_sound(snd_levelup, 0, false, 0.6);
+	
 	//Incrementa a velocidade global dos novos obstáculos
 	global.vel_arvore -= 0.5;
 	global.vel_passaro -= 0.5;
@@ -35,7 +37,6 @@ if(global.score_atual == global.pontos_niveis[global.level] && global.level < 9)
 		if (id_bg == -1) continue;
 		else if (layer_get_hspeed(id_bg) == 0) continue;
 		layer_hspeed(id_bg, layer_get_hspeed(id_bg) - 0.25);
-		show_debug_message(layer_get_hspeed(id_bg));
 	}
 }
 

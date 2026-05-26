@@ -8,10 +8,12 @@ fonte_y_atual = escala_fonte_y * 1.3;
 
 //Se já estiver uma transição ativa, não será feita
 //outra em sequência
-if(global.transicao) exit;
+if(!global.transicao && room_alvo != noone) {
+	//Direciona a sequência para a transição pretendida
+	global.destino = room_alvo;
 
-//Direciona a sequência para a transição pretendida
-global.destino = room_alvo;
+	//Vamos criar uma sequência de transição para a próxima room
+	layer_sequence_create("Transicao", 0, 0, seq_fadein);
+	exit;
+}
 
-//Vamos criar uma sequência de transição para a próxima room
-layer_sequence_create("Transicao", 0, 0, seq_fadein);

@@ -2,6 +2,9 @@
 var datetime = date_current_datetime();
 random_set_seed(datetime);
 
+//Vamos tocar a música caso ela não esteja sendo tocada
+if(!audio_is_playing(snd_jogo)) audio_play_sound(snd_jogo, 0, true);
+
 //Vamos instituir o primeiro alarme para gerar árvores
 alarm[0] = random_range(1,3) * 60;
 
