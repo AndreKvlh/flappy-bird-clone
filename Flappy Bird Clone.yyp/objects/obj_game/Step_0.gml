@@ -33,4 +33,10 @@ if(obj_player.colidiu) {
 	
 	//Vamos colocar um outro alarm para rodar daqui a 1 segundo
 	alarm[1] = game_get_speed(gamespeed_fps);
+	
+	//Trocar o destino da transição
+	global.destino = rm_inicio;
+	
+	//Iniciar a sequência
+	layer_sequence_create("Transicao", 0, 0, seq_fadein);
 }

@@ -16,3 +16,16 @@ global.pontos_niveis = [0, 10, 25, 50, 80, 120, 180, 250, 350, 500];
 //Global que controla a velocidade das árvores e dos pássaros obstáculos
 global.vel_arvore = -2;
 global.vel_passaro = -4;
+
+//Global que controla o destino para mexer com as transições dentro de sequências
+global.destino = rm_jogo;
+
+//Global para controlar o estado de uma transição a fim de evitar diversas sendo
+//ativas
+global.transicao = false;
+
+//Global que armazena um array que informa quais itens estão bloqueados ou não
+global.itens = [false, true, true];
+
+//Global que armazena a skin atual para o player
+global.skin_atual = spr_passaro1;

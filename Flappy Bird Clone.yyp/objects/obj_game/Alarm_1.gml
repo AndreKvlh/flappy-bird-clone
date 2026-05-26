@@ -10,4 +10,4 @@ global.vel_arvore = -2;
 global.vel_passaro = -4;
 
 //Reinicia a room
-game_restart();
+//game_restart();
