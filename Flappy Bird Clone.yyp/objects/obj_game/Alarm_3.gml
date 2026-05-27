@@ -30,14 +30,12 @@ if(global.score_atual == global.pontos_niveis[global.level] && global.level < 9)
 		instancia.hspeed = global.vel_arvore;
 	}	
 	
+	//Variável temporária que calcula a nova velocidade dos
+	//layers do bg
+	var vel_bg_nova = -1 - (0.5 * (global.level - 1));
+	
 	//Fazer o incremento de velocidade nos layers de background
-	var layers = layer_get_all();
-	for (var i = 0; i < array_length(layers); i++) {
-		var id_bg = layer_background_get_id(layers[i]);
-		if (id_bg == -1) continue;
-		else if (layer_get_hspeed(id_bg) == 0) continue;
-		layer_hspeed(id_bg, layer_get_hspeed(id_bg) - 0.25);
-	}
+	layer_hspeed("bg_arvores", vel_bg_nova);
 }
 
 //Seta um novo alarme para adicionar um novo ponto

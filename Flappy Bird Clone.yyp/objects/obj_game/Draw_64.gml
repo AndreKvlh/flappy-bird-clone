@@ -4,6 +4,12 @@ draw_set_font(fnt_pontuacao);
 //Vamos daí desenhar no canto superior esquerdo a pontuação
 draw_text(20, 20, global.score_atual);
 
+//Vamos desenhar um sprite pequeno da ave para cada vida que o
+//jogador possui atualmente
+for(var i = 0; i < global.vidas; i++) {
+	draw_sprite_ext(spr_passaro1, 0, 120 + (60 * i), 60 , 0.7, 0.7, 0, c_white, 1);
+}
+
 //Vamos desenhar a sprite do ícone dos peixes abaixo da nossa pontuação
 draw_sprite(spr_peixe_icone,0,20,80);
 

@@ -7,6 +7,9 @@ global.hi_score = 0;
 //Global para armazenar quantos peixes o jogador possui
 global.qtd_peixe = 0;
 
+//Global que controla a quantidade de vidas atual
+global.vidas = 3;
+
 //Global que controla o nível do jogo
 global.level = 1;
 

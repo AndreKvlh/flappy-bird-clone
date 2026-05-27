@@ -4,12 +4,7 @@ if(obj_player.colidiu) {
 	if(alarm[0] == -1) exit;
 	//Vamos parar todos os layers de background iterando sobre cada
 	//um para isso
-	var layers = layer_get_all();
-	for (var i = 0; i < array_length(layers); i++) {
-		var id_bg = layer_background_get_id(layers[i]);
-		if (id_bg == -1) continue;
-		layer_hspeed(id_bg, 0);
-	}
+	alterar_vel_backgrounds(0);
 	
 	//Pare também os coletáveis
 	var coletaveis = layer_get_all_elements(layer_get_id("Coletaveis"));
@@ -34,8 +29,15 @@ if(obj_player.colidiu) {
 	//Vamos colocar um outro alarm para rodar daqui a 1 segundo
 	alarm[1] = game_get_speed(gamespeed_fps);
 	
-	//Trocar o destino da transição
-	global.destino = rm_inicio;
+	//Retira uma vida da global de controle
+	global.vidas--;
+	
+	//Vamos fazer uma condicional aqui a fim de definir qual é
+	//a room de destino. Se o personagem tiver com mais que zero
+	//vidas, ele volta para o começo do jogo. Do contrário, volta
+	//para o título
+	if(global.vidas > 0) global.destino = rm_jogo;
+	else global.destino = rm_inicio;
 	
 	//Iniciar a sequência
 	layer_sequence_create("Transicao", 0, 0, seq_fadein);

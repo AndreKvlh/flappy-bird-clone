@@ -9,5 +9,5 @@ global.level = 1;
 global.vel_arvore = -2;
 global.vel_passaro = -4;
 
-//Reinicia a room
-//game_restart();
+//Se a quantidade de vidas for igual a zero, ele volta a ter 3
+if(global.vidas == 0) global.vidas = 3;

@@ -1,7 +1,3 @@
-//Gerar seed do jogo
-var datetime = date_current_datetime();
-random_set_seed(datetime);
-
 //Vamos tocar a música caso ela não esteja sendo tocada
 if(!audio_is_playing(snd_jogo)) audio_play_sound(snd_jogo, 0, true);
 
