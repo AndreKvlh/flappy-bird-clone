@@ -43,7 +43,7 @@
   "tracks":[
     {"$GMTextTrack":"","%Name":"fnt_pontuacao","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<AssetTextKeyframe>":"","Keyframes":[
           {"$Keyframe<AssetTextKeyframe>":"","Channels":{
-              "0":{"$AssetTextKeyframe":"v1","Alignment":1,"EnableEffects":false,"EnableGlow":false,"EnableOutline":false,"EnableShadow":false,"Id":{"name":"fnt_titulo","path":"fonts/fnt_titulo/fnt_titulo.yy",},"resourceType":"AssetTextKeyframe","resourceVersion":"2.0","Text":"JOGO DOS PÁÇAROS","Wrap":true,},
+              "0":{"$AssetTextKeyframe":"v1","Alignment":1,"EnableEffects":false,"EnableGlow":false,"EnableOutline":false,"EnableShadow":false,"Id":{"name":"fnt_titulo","path":"fonts/fnt_titulo/fnt_titulo.yy",},"resourceType":"AssetTextKeyframe","resourceVersion":"2.0","Text":"POMBO SIMULATOR","Wrap":true,},
             },"Disabled":false,"id":"0c27a11e-0f79-448a-b5d1-39db43668a9b","IsCreationKey":false,"Key":0.0,"Length":120.0,"resourceType":"Keyframe<AssetTextKeyframe>","resourceVersion":"2.0","Stretch":false,},
         ],"resourceType":"KeyframeStore<AssetTextKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"fnt_pontuacao","resourceType":"GMTextTrack","resourceVersion":"2.0","trackColour":4283582706,"tracks":[
         {"$GMColourTrack":"","%Name":"blend_multiply","builtinName":10,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<ColourKeyframe>":"","Keyframes":[

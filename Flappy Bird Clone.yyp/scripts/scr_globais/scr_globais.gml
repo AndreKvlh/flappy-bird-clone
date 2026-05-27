@@ -1,5 +1,3 @@
-show_debug_overlay(true);
-
 //Globais para o armazenamento de pontos
 global.score_atual = 0;
 global.hi_score = 0;
