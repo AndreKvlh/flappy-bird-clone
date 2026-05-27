@@ -11,3 +11,5 @@ image_speed = 1;
 
 //Fazendo o objeto subir
 vspeed = -5;
+
+audio_play_sound(snd_asa, 0, false, 1, 0,random_range(0.7,1.3));
