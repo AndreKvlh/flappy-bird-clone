@@ -42,3 +42,4 @@ if(obj_player.colidiu) {
 	//Iniciar a sequência
 	layer_sequence_create("Transicao", 0, 0, seq_fadein);
 }
+

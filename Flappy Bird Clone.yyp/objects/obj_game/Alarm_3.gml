@@ -36,6 +36,9 @@ if(global.score_atual == global.pontos_niveis[global.level] && global.level < 9)
 	
 	//Fazer o incremento de velocidade nos layers de background
 	layer_hspeed("bg_arvores", vel_bg_nova);
+	
+	//Ao entrar no nível 3, será colocado as aves
+	if (global.level == 3) alarm[2] = random_range(2,5) * 60;
 }
 
 //Seta um novo alarme para adicionar um novo ponto
